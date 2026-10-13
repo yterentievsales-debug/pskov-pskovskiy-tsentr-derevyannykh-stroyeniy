@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Псковский центр деревянных строений · Строительство домов и бань</title>
+<meta name="description" content="Каркасные дачные дома, бани, беседки и бытовки. Предлагаем готовые проекты и делаем по вашему.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Дачные дома, бани и беседки в Пскове – цену называем сразу">
+<meta property="og:description" content="Каркасные дачные дома, бани, беседки и бытовки. Предлагаем готовые проекты и делаем по вашему.">
+<meta property="og:image" content="assets/hero.webp">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%231f6884%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --c-canvas: #dfe5e7; --c-surface: #f3f6f6; --c-ink: #141f24; --c-ink-soft: #4c5b61; --c-accent: #1f6884; --c-accent-ink: #f1f7f9; --c-accent-deep: #15475b; --f-display: "Geologica", "Arial", system-ui, sans-serif; --f-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --h1k: 0.66; }
+</style>
+<link rel="stylesheet" href="style-prod.css">
+<style>
+/* ---- виджет-сотрудник: отвечаем сразу, круглосуточно ------------------- */
+.agent { position: fixed; right: clamp(12px, 2vw, 28px); bottom: clamp(12px, 2.4vh, 28px); z-index: 60;
+  display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--c-ink); }
+.agent__bubble { display: grid; gap: 2px; padding: 10px 16px; border-radius: 16px 16px 4px 16px;
+  background: var(--c-surface); box-shadow: 0 10px 30px rgb(0 0 0 / .45), 0 0 0 1px rgb(255 255 255 / .08);
+  font-family: var(--f-text); line-height: 1.25; max-width: 15rem;
+  opacity: 0; transform: translateY(8px); animation: agent-in .5s 1.4s cubic-bezier(.2,.7,.2,1) forwards; }
+.agent__bubble b { font-size: .95rem; font-weight: 700; }
+.agent__bubble span { font-size: .8rem; color: var(--c-ink-soft); }
+.agent__photo { position: relative; flex: none; width: 64px; height: 64px; border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--c-accent), 0 10px 26px rgb(0 0 0 / .45); transition: transform .2s ease-out; }
+.agent__photo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+.agent__photo::before { content: ""; position: absolute; inset: -3px; border-radius: 50%; border: 2px solid var(--c-accent);
+  animation: agent-pulse 2.6s ease-out infinite; pointer-events: none; }
+.agent__photo i { position: absolute; right: 1px; bottom: 1px; width: 15px; height: 15px; border-radius: 50%;
+  background: #2fbf5b; box-shadow: 0 0 0 3px var(--c-surface); }
+.agent:hover .agent__photo, .agent:focus-visible .agent__photo { transform: scale(1.05); }
+.agent:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 4px; border-radius: 40px; }
+@keyframes agent-in { to { opacity: 1; transform: none; } }
+@keyframes agent-pulse { 0% { opacity: .8; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.35); } }
+.agent__photo b { display: none; position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); padding: 1px 6px; border-radius: 8px;
+  background: var(--c-accent); color: var(--c-accent-ink); font: 700 10px/1.4 var(--f-text); white-space: nowrap; }
+@media (max-width: 640px) {
+  .agent { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .agent__bubble { display: none; }
+  .agent__photo { width: 54px; height: 54px; }
+  .agent__photo i { right: -2px; bottom: auto; top: 0; width: 13px; height: 13px; }
+  .agent__photo b { display: block; }
+}
+.agent { transition: opacity .25s ease-out, transform .25s ease-out; }
+.agent.is-away { opacity: 0; transform: translateY(10px); pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .agent__bubble { animation: none; opacity: 1; transform: none; } .agent__photo::before { animation: none; opacity: 0; } }
+/* ---- правки Юрия 08.10.2026 --------------------------------------------- */
+/* заголовок первого экрана: слова не переносятся и не рвутся, слова с дефисом не разрываются */
+.s-hero h1 { hyphens: none; -webkit-hyphens: none; overflow-wrap: normal; word-break: normal; }
+.s-hero h1 .nb { white-space: nowrap; }
+/* верхняя шапка (имя компании, телефон, кнопка) крупнее на 25 % */
+.s-bar { padding-top: 12px; padding-bottom: 12px; }
+.s-bar__brand { font-size: 1.25rem; min-height: 48px; }
+.s-bar__tel { font-size: 1.2rem; }
+.s-bar .s-btn--sm { font-size: 1.05rem; min-height: 46px; }
+@media (max-width: 640px) {
+  .s-bar__brand { font-size: 1.15rem; }
+  .s-bar .s-btn--sm { font-size: .98rem; min-height: 44px; padding: 0 1em; }
+}
+</style>
+<style>html{scroll-behavior:smooth}#contacts{scroll-margin-top:84px}.s-jump{color:inherit;text-decoration:none;display:block}.s-ticks .s-jump{display:inline}.s-ticks .s-jump:hover{text-decoration:underline;text-underline-offset:3px}.s-jump__go{display:inline-block;margin-top:10px;font-weight:600;color:var(--c-accent-deep,var(--c-accent))}.s-jump:hover .s-jump__go{text-decoration:underline}</style>
+<style>.s-bar__brand{min-width:0;max-width:52vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style>
+</head>
+<body class="s-prod" id="top" data-wa="" data-tg="" data-max="">
+<header class="s-bar" data-s-bar>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Псковский центр деревянных строений</a>
+  <div class="s-bar__right">
+    <a class="s-bar__tel" href="tel:+79211189933">+7 (921) 118-99-33</a>
+    <a class="s-btn s-btn--sm" href="#widget">Рассчитать смету</a>
+  </div>
+</header>
+<main>
+  <section class="s-hero">
+    <div class="s-hero__text">
+      <p class="s-eyebrow">Дачные дома, бани и беседки · Псков</p>
+      <h1>Дачные дома, бани и беседки в Пскове – цену называем сразу</h1>
+      <p class="s-lead">Каркасные дачные дома, бани, беседки и бытовки. Предлагаем готовые проекты и делаем по вашему.</p>
+      <ul class="s-ticks"><li>Готовые проекты и ваш проект</li><li>Цену называем сразу</li><li>Дома, бани, беседки и бытовки</li></ul>
+      <p class="s-rating"><b>3,5</b> на Яндекс.Картах · 5 отзывов</p>
+      <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Каркасный дом с красной обшивкой и белыми перилами с крестами" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+    </div>
+    <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-calc data-base="0" data-min="0" data-min-note="минимальный заказ" data-per="{}" data-message="Здравствуйте! Хочу рассчитать смету: {выбор}. Когда можно обсудить проект?" onsubmit="return false">
+      <h2 class="s-widget__title">Рассчитать смету бесплатно</h2>
+      <fieldset><legend>Что строим</legend><div class="s-chips"><label class="s-chip"><input type="radio" name="kind" value="0" data-label="Дачный дом" data-price="0" checked><span>Дачный дом</span></label><label class="s-chip"><input type="radio" name="kind" value="1" data-label="Баня" data-price="0"><span>Баня</span></label><label class="s-chip"><input type="radio" name="kind" value="2" data-label="Беседка" data-price="0"><span>Беседка</span></label></div></fieldset>
+      <div class="s-range"><label for="f-area"><span>Площадь</span><b><output data-s-out="area">24</output> м²</b></label>
+      <input id="f-area" type="range" name="area" min="6" max="80" step="2" value="24" data-price="0" data-label="Площадь" data-unit="м²"></div>
+      <fieldset><legend>Когда планируете</legend><div class="s-chips"><label class="s-chip"><input type="radio" name="when" value="0" data-label="В ближайшие месяцы" data-price="0" checked><span>В ближайшие месяцы</span></label><label class="s-chip"><input type="radio" name="when" value="1" data-label="Через полгода и позже" data-price="0"><span>Через полгода и позже</span></label><label class="s-chip"><input type="radio" name="when" value="2" data-label="Пока присматриваюсь" data-price="0"><span>Пока присматриваюсь</span></label></div></fieldset>
+      <p class="s-total" hidden style="display:none"><span>Смету назовём после обсуждения</span><b data-s-total>–</b></p>
+      <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Что назвать по телефону</span><p data-s-bubble></p></div>
+      <div class="s-send">
+        <a class="s-btn s-btn--wide" href="tel:+79211189933">Позвонить и рассчитать смету</a>
+        
+      </div>
+      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      
+    </form></div>
+    <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Каркасный дом с красной обшивкой и белыми перилами с крестами" decoding="async" style="object-position:50% 50%" fetchpriority="high"></figure>
+  </section>
+
+  
+
+  <section class="s-section s-reveal" id="prices">
+    <header class="s-section__head"><h2>Что строим</h2><p>Стоимость называем после обсуждения проекта: она зависит от проекта, участка и материалов.</p></header>
+    <div class="s-board"><div class="s-board__group">
+      <h3 class="s-board__title">Что строим</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Каркасные дачные дома</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Бани</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Беседки и бытовки</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Заборы и ограждения</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+      </ul>
+    </div></div>
+    <p class="s-note">Напишите или позвоните – обсудим ваш проект и рассчитаем смету.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Как проходит</h2></header>
+    <ol class="s-steps">
+      <li class="s-steps__item"><span class="s-steps__n">01</span><h3>Консультация</h3><p>Обсуждаем задачу и подбираем проект.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">02</span><h3>Договор</h3><p>Подписываем договор и согласуем проект.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">03</span><h3>Строительство</h3><p>Строим на вашем участке.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">04</span><h3>Сдача</h3><p>Сдаём объект и остаёмся на связи по вопросам.</p></li>
+    </ol>
+  </section>
+
+  <section class="s-photos s-reveal" aria-label="Фото"><figure><img class="" src="assets/house.webp" alt="Дом из дерева с крыльцом и перилами-крестами" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Дом с крыльцом</figcaption></figure><figure><img class="" src="assets/long.webp" alt="Одноэтажный дом с верандой и коричневой обшивкой" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Дом с верандой</figcaption></figure><figure><img class="" src="assets/gambrel.webp" alt="Двухэтажный деревянный дом с мансардной крышей" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Двухэтажный дом на блоках</figcaption></figure></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Что здесь есть</h2></header>
+    <ul class="s-promises">
+      <li><h3>Готовые проекты</h3><p>Предлагаем несколько готовых проектов.</p></li>
+      <li><h3>Ваш проект</h3><p>Можем построить и по вашему проекту.</p></li>
+      <li><h3>Цена сразу</h3><p>Называем цену сразу, без сюрпризов в процессе.</p></li>
+      <li><h3>Быстро</h3><p>Строим дома, бани и беседки быстро.</p></li>
+    </ul>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head s-section__head--reviews"><h2>Отзывы с Яндекс.Карт</h2><p class="s-reviews__rating"><span class="s-reviews__num">3,5</span><span class="s-reviews__stars" style="--r: 3.5" aria-label="рейтинг 3,5 из 5"></span><span class="s-reviews__count">5 отзывов</span><a class="s-reviews__all" href="https://yandex.ru/maps/org/pskovskiy_tsentr_derevyannykh_stroyeniy/1571977777/reviews/" target="_blank" rel="noopener">Читать все отзывы на Яндекс.Картах</a></p></header>
+    <ul class="s-reviews">
+      <li><blockquote>«Очень быстро и недорого построили качественный домик для моей любимой бабушки! Спасибо!»</blockquote><p class="s-reviews__who">Евгений Ефимов</p></li>
+      <li><blockquote>«Заказывали с женой баню в этой компании. Предложили несколько готовых проектов, но могут сделать и по вашему. Цену говорят сразу, никаких дополнительных затрат впоследствии не потребовалось (кроме доставки до дачи).»</blockquote><p class="s-reviews__who">Роман К.</p></li>
+      <li><blockquote>«Надежность, гарантии, отличное качество, отсутствие посредников, реальные и адекватные цены.»</blockquote><p class="s-reviews__who">Анонимный отзыв</p></li>
+    </ul>
+    <p class="s-note">Отзывы с карточки на Яндекс.Картах, без правок.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Частые вопросы</h2></header>
+    <div class="s-faq"><details><summary>Что вы строите?</summary><p>Мы строим каркасные дачные дома, бани, беседки, бытовки, а также заборы и ограждения.</p></details><details><summary>Есть ли готовые проекты?</summary><p>Да, мы предлагаем несколько готовых проектов и можем сделать по вашему.</p></details><details><summary>Как узнать стоимость?</summary><p>Напишите нам в ВКонтакте или позвоните: назовём цену сразу.</p></details><details><summary>Когда вы работаете?</summary><p>Мы работаем с понедельника по пятницу с 9:15 до 18:00, в субботу и воскресенье с 10:00 до 16:00. Адрес: Псков, ул. Леона Поземского, 76.</p></details></div>
+  </section>
+
+  <section class="s-section s-final s-reveal" id="contacts">
+    <header class="s-section__head"><h2>Обсудим проект и рассчитаем смету</h2></header>
+    <div class="s-contacts">
+      <dl>
+        <div><dt>Адрес</dt><dd>ул. Леона Поземского, 76, Псков</dd></div>
+        <div><dt>Часы</dt><dd>Пн–Пт 9:15–18:00, Сб–Вс 10:00–16:00</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79211189933">+7 (921) 118-99-33</a></dd></div>
+      </dl>
+      <div class="s-contacts__actions">
+        <a class="s-btn" href="#widget">Рассчитать смету</a>
+        <a class="s-btn s-btn--ghost" data-vk-btn href="https://vk.ru/saray702700" target="_blank" rel="noopener">ВКонтакте</a>
+        
+      </div>
+    </div>
+  </section>
+</main>
+<!-- agent-widget -->
+<a class="agent" href="#widget" aria-label="Написать нам: отвечаем сразу, круглосуточно">
+  <span class="agent__bubble"><b>Отвечаем сразу</b><span>круглосуточно, администратор на связи</span></span>
+  <span class="agent__photo"><img src="assets/agent.webp" alt="" width="64" height="64" loading="lazy"><i aria-hidden="true"></i><b aria-hidden="true">24/7</b></span>
+</a>
+<!-- /agent-widget -->
+<footer class="s-foot"><p>Псковский центр деревянных строений · Псков</p><p>Строительство домов и бань</p></footer>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Рассчитать смету</a><a class="s-btn s-btn--ghost" href="tel:+79211189933">Позвонить</a></nav>
+<script src="style.js" defer></script>
+<script>
+  // кружок менеджера прячется, пока на экране форма записи (не наезжает на неё)
+  (function () {
+    var a = document.querySelector('.agent'), w = document.getElementById('widget');
+    if (!a || !w || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (es) { a.classList.toggle('is-away', es[0].isIntersecting); }, { rootMargin: '0px 0px -90px 0px' }).observe(w);
+  })();
+</script>
+</body>
+</html>
